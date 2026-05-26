@@ -9,6 +9,16 @@ public class Event {
 	private int availableSeats;
 	private double ticketPrice;
 	
+	public Event(String eventId, String eventName, String eventDate, int totalSeats, int availableSeats,
+			double ticketPrice) {
+		super();
+		this.eventId = eventId;
+		this.eventName = eventName;
+		this.eventDate = eventDate;
+		this.totalSeats = totalSeats;
+		this.availableSeats = availableSeats;
+		this.ticketPrice = ticketPrice;
+	}
 	public String getEventId() {
 		return eventId;
 	}
@@ -44,6 +54,11 @@ public class Event {
 	}
 	public void setTicketPrice(double ticketPrice) {
 		this.ticketPrice = ticketPrice;
+	}
+	@Override
+	public String toString() {
+		return "Event [eventId=" + eventId + ", eventName=" + eventName + ", eventDate=" + eventDate + ", totalSeats="
+				+ totalSeats + ", availableSeats=" + availableSeats + ", ticketPrice=" + ticketPrice + "]";
 	}
 	
 	
