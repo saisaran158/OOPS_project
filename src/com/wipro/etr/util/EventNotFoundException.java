@@ -1,5 +1,5 @@
 package com.wipro.etr.util;
 
-public class EventNotFoundException {
-
+public class EventNotFoundException extends Exception{
+	
 }
